@@ -7,6 +7,7 @@ class Game:
     def __init__(self):
         pass
 
+    # create rect 
     def show_bg(self, surface):
         for row in range(ROWS):
             for col in range(COLS):
