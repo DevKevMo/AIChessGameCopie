@@ -1,7 +1,7 @@
 from const import *
-from square import Square
-from piece import *
 from move import Move
+from piece import *
+from square import Square
 
 
 class Board:
