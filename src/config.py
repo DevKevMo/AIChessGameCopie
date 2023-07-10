@@ -14,7 +14,7 @@ class Config:
         self.theme = self.themes[self.idx]
         # font
         self.move_sound = Sound(os.path.join("assets/sounds/move.wav"))
-        self.capture_sound = Sound(os.path.join("assets/sounds/move.wav"))
+        self.capture_sound = Sound(os.path.join("assets/sounds/capture.wav"))
 
     def change_theme(self):
         self.idx += 1

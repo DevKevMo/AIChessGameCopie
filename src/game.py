@@ -111,7 +111,7 @@ class Game:
     def change_theme(self):
         self.config.change_theme()
 
-    def sound_effect(self, captured=False):
+    def play_sound(self, captured=True):
         if captured:
             self.config.capture_sound.play()
         else:
