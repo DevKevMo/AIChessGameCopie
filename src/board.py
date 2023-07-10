@@ -70,7 +70,7 @@ class Board:
                 if Square.in_range(possible_move_row, possible_move_col):
                     if self.squares[possible_move_row][
                         possible_move_col
-                    ].has_enemy_piece(piece.color):
+                    ].has_rival_piece(piece.color):
                         # create intial and final move squares
                         initial = Square(row, col)
                         final = Square(possible_move_row, possible_move_col)
@@ -100,7 +100,7 @@ class Board:
                 if Square.in_range(possible_move_row, possible_move_col):
                     if self.squares[possible_move_row][
                         possible_move_col
-                    ].isempty_or_enemy(piece.color):
+                    ].isempty_or_rival(piece.color):
                         # create squares of the new move
                         initial = Square(row, col)
                         final = Square(possible_move_row, possible_move_col)
@@ -128,10 +128,10 @@ class Board:
                             # append new move
                             piece.add_move(move)
 
-                        # has enemy piece and move + break
+                        # has rival piece and move + break
                         if self.squares[possible_move_row][
                             possible_move_col
-                        ].has_enemy_piece(piece.color):
+                        ].has_rival_piece(piece.color):
                             # append new move
                             piece.add_move(move)
                             break
@@ -168,7 +168,7 @@ class Board:
                 if Square.in_range(possible_move_row, possible_move_col):
                     if self.squares[possible_move_row][
                         possible_move_col
-                    ].isempty_or_enemy(piece.color):
+                    ].isempty_or_rival(piece.color):
                         # create squares of the new move
                         initial = Square(row, col)
                         final = Square(possible_move_row, possible_move_col)
